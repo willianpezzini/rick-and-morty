@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assests/style.css">
+    <title>Cards Rick and Morty</title>
+</head>
+
+<body>
+    <section class="pesquisa-de-personagens">
+        <form action="" method="get" class="formulario-de-pesquisa">
+            <section class="barra-pequisa">
+                <h2>Busca de Personagens</h2>
+                <div class="campo-de-pesquisa">
+                    <label for="characterId">Id do Personagem</label>
+                    <input type="number" placeholder="Pesquisar" name="characterId" id="characterId">
+                </div>
+            </section>
+            <section class="selecao-informacoes">
+                <h2>Selecione as Informações a serem pesquisadas</h2>
+                <section class="area-selecao">
+                    <div class="campo-de-selecao">
+                        <label for="id">ID</label>
+                        <input type="checkbox" class="detalhes" name="id" id="id">
+                    </div>
+                    <div class="campo-de-selecao">
+                        <label for="name">Nome</label>
+                        <input type="checkbox" class="detalhes" name="name" id="name">
+                    </div>
+                    <div class="campo-de-selecao">
+                        <label for="status">Status</label>
+                        <input type="checkbox" class="detalhes" name="status" id="status">
+                    </div>
+                    <div class="campo-de-selecao">
+                        <label for="species">Espécie</label>
+                        <input type="checkbox" class="detalhes" name="species" id="species">
+                    </div>
+                    <div class="campo-de-selecao">
+                        <label for="gender">Gênero</label>
+                        <input type="checkbox" class="detalhes" name="gender" id="gender">
+                    </div>
+                    <div class="campo-de-selecao">
+                        <label for="origin">Planeta de origem</label>
+                        <input type="checkbox" class="detalhes" name="origin" id="origin">
+                    </div>
+                    <div class="campo-de-selecao">
+                        <label for="episode">Episódios</label>
+                        <input type="checkbox" class="detalhes" name="episode" id="episode">
+                    </div>
+                </section>
+            </section>
+            <br>
+            <div class="botoes">
+                <button type="submit" id="btn-pesquisar" class="btn-pesquisar cursor-pointer ">Pesquisar</button>
+                <button type="reset" id="btn-reset" class="btn-reset cursor-pointer">Limpar</button>
+            </div>
+        </form>
+        <div id="result-style">
+            <img src="" id="image" alt="">
+            <pre id="content"></pre>
+        </div>
+    </section>
+</body>
+<script src="./script/script.js"></script>
+
+</html>
